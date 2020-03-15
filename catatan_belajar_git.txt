@@ -1,0 +1,72 @@
+Three stages of a file
+
+1. commited
+2. modified
+3. staged
+
+The Three states of git project
+1. working directory 
+2. staging area (index)
+3. git directory (Repository)
+
+setting username and user.email in gitlab command line
+
+1. git config --global user.name "nfebrian13"
+2. git config --global user.email "febrian.nana@gmail.com"
+3. git config --list
+4. git config user.name 
+
+man git
+
+1. echo "# wired-brain-recipes" >> README.md
+2. git add .
+3. git commit -m "first commit"
+4. git remote add origin https://github.com/wired-brain-coffe/wired-brain-recipes.git
+5. git push -u origin master
+
+-- Basic Commands
+git add .
+
+git commit-a-m 
+git status --short
+git add A
+git status
+git diff
+git diff --staged
+
+
+files tracked by git 
+
+1. commited -> unmodified changes from the last commit snapshot
+2. modified -> changes made to files since last commit snapshot
+3. staged   -> changes marked to be added into the next commit snapshot
+
+untracked files is -> new file. that didnt exist in her last commit
+
+touch verdors.txt
+
+
+-- Short Status
+
+1. git status -s
+2. git status --short
+
+   staged      modified     file name
+   
+   ket: M = Modified
+        A = New File added to staging area
+	   ?? = New File untracked by git	
+	   
+-- Git diff
+   1. what changes have i staged that are ready to be committed	   
+   
+   git diff -- staged
+   git diff -- staged --no-renames
+   
+git commit -a -m "add new vendor"
+
+git log
+git log -1
+git log --oneline
+git log --stat
+git log -- patch	   
